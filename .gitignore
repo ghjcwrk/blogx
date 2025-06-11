@@ -1,0 +1,11 @@
+# .gitignore
+
+# artifacts
+dist
+# dependencies
+node_modules
+# garbage
+.task
+# secrets
+.env.keys
+certs

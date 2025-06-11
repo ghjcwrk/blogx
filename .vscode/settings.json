@@ -1,0 +1,11 @@
+{
+  "editor.fontFamily": "Monaco",
+  "emmet.showExpandedAbbreviation": "never",
+  "files.associations": {
+    "bun.lock": "plaintext"
+  },
+  "files.exclude": {
+    "**/.task": true,
+    "**/node_modules": true
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "dprint.dprint",
+        "denoland.vscode-deno",
+        "unifiedjs.vscode-mdx",
+        "fermelone.simple-browser-multi",
+        "naumovs.color-highlight"
+      ],
+      "settings": {
+        "deno.enable": true,
+        "deno.enablePaths": [".devcontainer"],
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": "explicit"
+        },
+        "editor.defaultFormatter": "dprint.dprint",
+        "editor.formatOnSave": true,
+        "editor.renderWhitespace": "all",
+        "editor.tabSize": 2,
+        "eslint.validate": [
+          "javascript",
+          "typescript",
+          "typescriptreact",
+          "json",
+          "jsonc"
+        ],
+        "eslint.workingDirectories": [
+          ".devcontainer",
+          "./"
+        ],
+        "files.insertFinalNewline": true,
+        "json.schemaDownload.enable": false,
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "terminal.integrated.profiles.linux": {
+          "zsh": {
+            "path": "/bin/zsh"
+          }
+        }
+      }
+    }
+  },
+  "dockerComposeFile": "docker-compose.yml",
+  "name": "devcontainer",
+  "service": "shell",
+  "workspaceFolder": "/workspace"
+}
