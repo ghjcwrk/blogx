@@ -6,6 +6,7 @@ templates:
     desc: "`{{.cmds}}`"
     cmds: ['{{.cmds}}']
 tasks:
+  # adaptability
   adb.dprint.config.update:
     <<: *acimov
     vars: { cmds: dprint config update }
@@ -24,12 +25,14 @@ tasks:
         for dir in {{.dirs}}; do
           bun update --cwd "$dir"
         done
+  # confidentiality
   cfi.dotenvx.encrypt:
     <<: *acimov
     vars: { cmds: dotenvx encrypt .env }
   cfi.dotenvx.decrypt:
     <<: *acimov
     vars: { cmds: dotenvx decrypt .env }
+  # integrity
   int.bun.audit:
     <<: *acimov
     vars: { cmds: bun audit }
@@ -62,9 +65,11 @@ tasks:
     vars:
       extensions: ts,tsx
       cmds: bunx madge --circular --extensions '{{.extensions}}' .
+  # mobility
   mob.bun.harbor.dev:
     <<: *acimov
     vars: { cmds: bun -F harbor/main dev }
+  # observability
   obs.pkgx.cloc:
     <<: *acimov
     vars:
@@ -77,6 +82,7 @@ tasks:
       level: 7
       ignore: .DS_Store,.git,.deno,node_modules
       cmds: bunx tree-cli -l {{.level}} -a --ignore '{{.ignore}}'
+  # visibility
   vis.task.time:
     <<: *acimov
     vars:
