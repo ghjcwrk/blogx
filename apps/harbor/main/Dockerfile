@@ -11,7 +11,7 @@ RUN bun -F harbor/main build
 
 WORKDIR /workspace/apps/harbor/main
 
-CMD ['bun', 'dist/server.mjs']
+CMD ["bun", "dist/server.mjs"]
 
 # docker build -f apps/harbor/main/Dockerfile -t blogx .
 # docker run -it --rm -p 8080:8080 blogx
