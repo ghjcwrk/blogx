@@ -1,5 +1,5 @@
 {
-  "editor.fontFamily": "Monaco",
+  "editor.fontFamily": "Monoid",
   "emmet.showExpandedAbbreviation": "never",
   "files.associations": {
     "bun.lock": "plaintext"
