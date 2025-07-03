@@ -21,9 +21,9 @@ const Author = Object.assign(
 )
 
 const author = s.define({
-  address: s.object({ style: s.style({ fw: 'bold' }) }),
+  address: s.object({ style: s.style({ fw: 'bold', gridC: 2, gridR: 2 }) }),
   img: s.object({
-    style: s.style({ bdr: '50%', h: '100px', m: 0, ml: '-1rem', pl: '1rem', trs: 'translateX(50%)', w: '100px' })
+    style: s.style({ bdr: '50%', h: '100px', m: 0, ml: '-1rem', pl: '1rem', transform: 'translateX(50%)', w: '100px' })
   }),
   root: s.object({
     style: s.style({ d: 'grid', gap: '1rem', gridTc: 'auto auto', jc: 'center', mt: '1rem' })

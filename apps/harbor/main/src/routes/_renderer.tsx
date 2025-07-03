@@ -65,6 +65,7 @@ const html = s.define({
       '& h1': s.style({ bd: '0', ta: 'center' }),
       '& h2': s.style({ bd: '0', p: '0' }),
       '& h3': s.style({ bd: '0', p: '0' }),
+      '& tr': s.style({ va: 'baseline' }),
       d: 'grid',
       ff: 'ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace',
       placeContent: 'center',
